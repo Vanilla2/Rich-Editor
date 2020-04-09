@@ -1,0 +1,149 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.header{
+    position: -webkit-sticky; /* Safari */
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-top: 0.1px solid rgb(218, 216, 216);
+    border-bottom: 0.1px solid rgb(218, 216, 216);
+    display:flex;
+    align-items: center;
+}
+.font{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.brand-top{
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.color{
+    color: rgb(25,146,238);
+}
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 50px;
+}
+.link{
+    text-decoration: none;
+    color:black;
+}
+.drop-button{
+    border:none;
+    background-color: white;
+    text-align: center;
+}
+.drop-button-mobile{
+    color: rgb(83, 83, 83);
+    border:none;
+    background-color: white;
+    display: none;
+    text-align: end;
+    font-size: 30px;
+    margin-right: 3%;
+}
+.drop-button-mobile-2{
+    color: rgb(83, 83, 83);
+    border:none;
+    background-color: white;
+    text-align: end;
+    font-size: 30px;
+    margin-right: 3%;
+}
+.drop-button-content-mobile a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    color:rgb(83, 83, 83);
+    font-size: 15px;
+}
+button{
+    cursor: pointer;
+}
+.gen{
+    background-color: rgb(236, 236, 236);
+}
+.drop-button-content-mobile{
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    top: 63px;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+.drop-button-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drop-button-content a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    color:rgb(83, 83, 83);
+}
+.color-d{
+    color: rgb(83, 83, 83);
+}
+.nav-item{
+    color: rgb(83, 83, 83);
+    margin-left: 1.2%;
+    margin-right: 1.1%;
+    font-size: 20px;
+}
+.icon{
+    font-size: 20px;
+}
+.nav-bar{
+    display:flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+.drop-button:hover .drop-button-content {
+    display: block;
+}
+.drop-button-content a:hover {
+    background-color: rgb(228, 228, 228);
+}
+.drop-button-mobile:hover .drop-button-content-mobile{
+    display: block;
+}
+.drop-button-mobile:hover .drop-button-content-mobile {
+    display: block;
+}
+@media only screen and (max-width: 630px) {
+    .header{
+        border: none;
+    }
+    .logo{
+        max-height: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .brand-top{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 15px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .drop-button-mobile{
+        display: block;
+    }
+
+}
